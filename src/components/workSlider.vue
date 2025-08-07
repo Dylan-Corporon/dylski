@@ -1,21 +1,21 @@
 <script setup lang="ts">
 const images = [
-    "/src/assets/media/images/workSlides/workSlide_1.png",
-    "/src/assets/media/images/workSlides/workSlide_2.png",
-    "/src/assets/media/images/workSlides/workSlide_3.png",
-    "/src/assets/media/images/workSlides/workSlide_4.png",
-    "/src/assets/media/images/workSlides/workSlide_5.png",    
-    "/src/assets/media/images/workSlides/workSlide_11.png",
+    "./src/assets/media/images/workSlides/workSlide_1.png",
+    "./src/assets/media/images/workSlides/workSlide_2.png",
+    "./src/assets/media/images/workSlides/workSlide_3.png",
+    "./src/assets/media/images/workSlides/workSlide_4.png",
+    "./src/assets/media/images/workSlides/workSlide_5.png",    
+    "./src/assets/media/images/workSlides/workSlide_11.png",
     // Add more image URLs if you have them
 ];
 
 const bottomImages = [
-    "/src/assets/media/images/workSlides/workSlide_6.png",
-    "/src/assets/media/images/workSlides/workSlide_7.png",
-    "/src/assets/media/images/workSlides/workSlide_8.png",
-    "/src/assets/media/images/workSlides/workSlide_9.png",
-    "/src/assets/media/images/workSlides/workSlide_10.png",
-    "/src/assets/media/images/workSlides/workSlide_12.png",
+    "./src/assets/media/images/workSlides/workSlide_6.png",
+    "./src/assets/media/images/workSlides/workSlide_7.png",
+    "./src/assets/media/images/workSlides/workSlide_8.png",
+    "./src/assets/media/images/workSlides/workSlide_9.png",
+    "./src/assets/media/images/workSlides/workSlide_10.png",
+    "./src/assets/media/images/workSlides/workSlide_12.png",
     
     // Add more image URLs if you have them
 ];
