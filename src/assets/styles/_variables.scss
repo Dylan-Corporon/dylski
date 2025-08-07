@@ -1,0 +1,31 @@
+/* _variables.scss */
+/* Color Variables */
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$accent-color: #e74c3c;
+$text-color: #333;
+$background-color: #f5f5f5;
+
+/* Font Variables */
+$font-family-base: 'Roboto', Arial, sans-serif;
+$font-size-base: 16px;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+/* Spacing Variables */
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 32px;
+$spacing-xl: 64px;
+
+/* Border Variables */
+$border-radius: 4px;
+$border-color: #ddd;
+$border-width: 1px;
+
+/* Breakpoints */
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
