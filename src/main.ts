@@ -5,12 +5,16 @@ import App from './App.vue'
 import { createPinia } from 'pinia'
 import { useApiDataStore } from './stores/apiData'
 
-const app = createApp(App)
-const pinia = createPinia()
-app.use(pinia)
+async function bootstrap() {
+  const app = createApp(App)
+  const pinia = createPinia()
+  app.use(pinia)
 
-const apiStore = useApiDataStore()
-await apiStore.fetchData()
-await apiStore.fetchLogoLineData()
+  const apiStore = useApiDataStore()
+  await apiStore.fetchData()
+  await apiStore.fetchLogoLineData()
 
-app.mount('#app')
+  app.mount('#app')
+}
+
+bootstrap()
