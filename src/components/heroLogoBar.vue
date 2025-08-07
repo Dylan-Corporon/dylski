@@ -1,14 +1,4 @@
 <script setup lang="ts">
-import { storeToRefs } from 'pinia'
-import { useApiDataStore } from '../stores/apiData'
-
-const store = useApiDataStore()
-const { logoLine } = storeToRefs(store)
-
-function getLogoItems() {
-  const root = logoLine.value?.data?.[0]
-  return root?.thing || []
-}
 </script>
 
 <template>

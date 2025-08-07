@@ -1,48 +1,4 @@
 <script setup lang="ts">
-import { storeToRefs } from 'pinia'
-import { useApiDataStore } from '../stores/apiData'
-
-const { heroData } = storeToRefs(useApiDataStore())
-
-function getTitleText() {
-  const block = heroData.value?.mainHeadline?.[0]
-  if (!block || !block.children) return ''
-
-  return block.children.map(child => {
-    return child.text ?? ''
-  }).join('')
-}
-
-function getParagraphHtml() {
-  const block = heroData.value?.mainHeadline?.[1]
-  if (!block || !block.children) return ''
-
-  return block.children.map(child => {
-    if (child.type === 'text') {
-      return child.text
-    }
-
-    if (child.type === 'link') {
-      const linkText = child.children?.map(c => c.text).join('') ?? ''
-      return `<a href="${child.url}" class="text-orange-600 underline">${linkText}</a>`
-    }
-
-    return ''
-  }).join('')
-}
-
-function getHeroImageUrl() {
-    const url = heroData.value?.image?.url
-    return url ? `http://localhost:1337${url}` : ''
-}
-
-function getCtaData() {
-  return {
-    label: heroData.value?.ctaLabel ?? '',
-    url: heroData.value?.ctaUrl ?? '#'
-  }
-}
-
 </script>
 
 <template>
@@ -61,7 +17,7 @@ function getCtaData() {
         <h1 class="text-4xl sm:text-5xl font-semibold text-gray-900 leading-tight mb-6 break-words">👋 I'm a <span class="font-extrabold">Web Designer &amp; Developer</span>🦄 by day, a father by night, and a <span class="font-extrabold hat-wearer">multiple hat wearer</span> around the clock.
         </h1>
 
-        <p class="text-lg text-gray-600 mb-8" v-html="getParagraphHtml()" />
+        <p class="text-lg text-gray-600 mb-8">Currently using my talents to design &amp; develop amazing sleep experiences at <a href="https://www.goodmorning.com" class="text-orange-600 underline">GoodMorning.com</a>, where every project is a dream come true.</p>
         <div class="flex justify-center md:justify-start">
             <a
               href="#contact"
